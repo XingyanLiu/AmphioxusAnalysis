@@ -2,7 +2,7 @@
 
 Code for analysis of snRNA-seq and scATAC-seq of amphioxus
 
-Code for building the developmental tree can be found at: https://github.com/XingyanLiu/stagewiseNN
+The package for building the developmental tree can be found at: https://github.com/XingyanLiu/stagewiseNN
 
 | file                           | description                                                                              |
 |--------------------------------|------------------------------------------------------------------------------------------|
@@ -18,6 +18,6 @@ Code for building the developmental tree can be found at: https://github.com/Xin
 | RFunx.R                        | general utils functions (R)                                                              |
 | RFunxATAC.R                    | utils functions for analysis related to scATAC-seq data                                  |
 | RFunxTreePlot.R                | utils functions for plotting the tree                                                    |
-| COLOR_SETS.R                   | sss                                                                                      |
+| COLOR_SETS.R                   | the color set                                                                            |
 
 
