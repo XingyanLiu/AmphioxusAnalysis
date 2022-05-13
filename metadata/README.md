@@ -1,7 +1,8 @@
 Metadata
 ========
 
-| file                | description                                                 |
+| File                | Description                                                 |
 |---------------------|-------------------------------------------------------------|
-| merged_metadata.csv | merged metadata of snRNA-seq from ALL the stages            |
-| gene_mappings/*.csv | homologous gene mapping between amphioxus and other species |
+| metadata_each_stage-RNA | metadata of snRNA-seq from each stages            |
+| metadata_merged.csv | merged metadata of snRNA-seq from ALL the stages            |
+| metadata_merged-ATAC.csv | merged metadata of scATAC-seq from ALL the stages            |

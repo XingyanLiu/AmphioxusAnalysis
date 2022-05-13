@@ -4,7 +4,7 @@ Code for analysis of snRNA-seq and scATAC-seq of amphioxus
 
 The package for building the developmental tree can be found at: https://github.com/XingyanLiu/stagewiseNN
 
-| file                           | description                                                                                    |
+| File                           | Description                                                                                    |
 |--------------------------------|------------------------------------------------------------------------------------------------|
 | rna_proc_stagewise.py          | preprocessing, clustering, and visualization of the snRNA-seq data                             |
 | de-nearstage.R                 | differential expression analysis - current vs the previous stage                               |

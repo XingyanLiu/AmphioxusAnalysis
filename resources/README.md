@@ -1,7 +1,7 @@
 RESOURCES
 =========
 
-| file                        | description                                                 |
+| File                        | Description                                                 |
 |-----------------------------|-------------------------------------------------------------|
 | `Annos.rds` and `Annos.csv` | annotations of each gene ID in amphioxus genome             |
 | gene_mappings/*.csv         | homologous gene mapping between amphioxus and other species |
