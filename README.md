@@ -1,8 +1,16 @@
 # AmphioxusAnalysis
 
-Code for analysis of snRNA-seq and scATAC-seq of amphioxus
+The source code for the analysis of snRNA-seq and scATAC-seq of amphioxus.
 
 The package for building the developmental tree can be found at: https://github.com/XingyanLiu/stagewiseNN
+
+Citation:
+> Pengcheng Ma, Xingyan Liu, Zaoxu Xu et al., 
+> **Joint profiling of gene expression and chromatin accessibility of amphioxus 
+> development at single-cell resolution**,
+> _Cell Reports_ (2022), https://doi.org/10.1016/j.celrep.2022.110979
+
+<img src="graphic_summ.png" height="400"/>
 
 | File                           | Description                                                                                    |
 |--------------------------------|------------------------------------------------------------------------------------------------|
