@@ -28,6 +28,8 @@ Citation:
 | RFunx.R                        | general utils functions (R)                                                                    |
 | RFunxATAC.R                    | utils functions for analysis related to scATAC-seq data                                        |
 | RFunxTreePlot.R                | utils functions for plotting the tree                                                          |
+| amph_tree-struct.R             | main code for plotting the tree structure                                                      |
+| amph_tree-web.R                | main code for visualizing the expressions on the developmental tree                            |
 | COLOR_SETS.R                   | the color set                                                                                  |
 
 

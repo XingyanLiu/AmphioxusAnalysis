@@ -17,13 +17,9 @@ source("RFunxTreePlot.R")
 
 
 # ===================================================================
-#        setting direcories 
+#        setting directories
 # ===================================================================
 
-# DATADIR = sprintf("test_data/devTree/%s", "20201014") # "20200707"
-# # DATADIR = "E:/Users/xyliu/data003/amph/tree"
-# date_tag = c("20210115", "20201014", "20200707")[1]
-# DATADIR = sprintf("test_data/devTree/%s", date_tag) # "20200707"
 DATADIR = 'test_data/devTree/20210115'
 figdir = file.path(DATADIR, 'figs')
 if(!dir.exists(figdir)){dir.create(figdir, recursive = T)}
@@ -34,8 +30,6 @@ if(!dir.exists(figdir)){dir.create(figdir, recursive = T)}
 # ===================================================================
 
 message("loading edges of developmental tree...")
-# tailtag = c("", "-formal", "-labeled", "-rmvE15")[2]     #"-rmvE15"
-# fn_tree_struct = sprintf("%s/tree_struct%s.csv", DATADIR, tailtag)
 fn_tree_struct = "test_data/devTree/20210115/tree_struct-formal.csv"
 df_struct0 = read.csv(fn_tree_struct, 
                       na.strings = '', 
@@ -44,7 +38,7 @@ rownames(df_struct0) = df_struct0$node
 str(df_struct0)
 # > str(df_struct0)
 # 'data.frame':	93 obs. of  8 variables:
-#   $ node       : chr  "B_0" "B_1" "B_2" "G3_1" ...
+# $ node       : chr  "B_0" "B_1" "B_2" "G3_1" ...
 # $ parent     : chr  "32cell" "32cell" "32cell" "B_1" ...
 # $ label      : chr  "B_0" "B_1" "B_2" "G3_1" ...
 # $ stage      : chr  "B" "B" "B" "G3" ...
@@ -53,11 +47,6 @@ str(df_struct0)
 # $ node_name  : chr  "B_0" "B_1" "B_2" "G3_1" ...
 # $ parent_name: chr  "32cell" "32cell" "32cell" "B_1" ...
 
-
-message("loading average expressions and expresson proportions...")
-df_expr = read.csv(sprintf("%s/avg_expr_all.csv", DATADIR), row.names = 1)
-df_exprprop = read.csv(sprintf("%s/expr_prop_all.csv", DATADIR), row.names = 1)
-Genes = rownames(df_expr)
 
 # ============== prepare for tree plot ===============
 source("RFunxTreePlot.R")
@@ -73,7 +62,10 @@ df_struct = df_struct0[nodes_ordered, ]
 head(df_struct)
 
 
-# =====================[ stages ]=========================
+################################################################################
+# main code
+################################################################################
+
 source("RFunxTreePlot.R")
 
 treedt = makeTreeDataStage(df_struct, stg_levels = StageNames)
