@@ -20,7 +20,7 @@ source("RFunxTreePlot.R")
 #        setting directories
 # ===================================================================
 
-DATADIR = 'test_data/devTree/20210115'
+DATADIR = 'test_data/devTree/20210115'  # SET BY USER
 figdir = file.path(DATADIR, 'figs')
 if(!dir.exists(figdir)){dir.create(figdir, recursive = T)}
 
@@ -30,7 +30,7 @@ if(!dir.exists(figdir)){dir.create(figdir, recursive = T)}
 # ===================================================================
 
 message("loading edges of developmental tree...")
-fn_tree_struct = "test_data/devTree/20210115/tree_struct-formal.csv"
+fn_tree_struct = "test_data/devTree/20210115/tree_struct-formal.csv"  # SET BY USER
 df_struct0 = read.csv(fn_tree_struct, 
                       na.strings = '', 
                       as.is = T) 
